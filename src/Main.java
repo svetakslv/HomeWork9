@@ -7,8 +7,8 @@ public class Main {
         petSematary.setPublishYear(1983);
         System.out.println(petSematary);
 
-        Author author1 = new Author("Paulo", " Coelho");
-        Book theAlchemist = new Book("The Alchemist", 1988, author1);
+        Author author1 = new Author("Paulo", "Coelho");
+        Book theAlchemist = new Book("Алхимик", 1988, author1);
         theAlchemist.setPublishYear(1988);
         System.out.println(theAlchemist);
     }
