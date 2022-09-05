@@ -11,5 +11,6 @@ public class Main {
         Book theAlchemist = new Book("Алхимик", 1988, author1);
         theAlchemist.setPublishYear(1968);
         System.out.println(theAlchemist);
+
     }
 }

@@ -26,7 +26,7 @@ public class Book {
     }
 
     public void setPublishYear(int publishYear) {
-        if (publishYear < 1980 || publishYear > 2030) {
+        if (publishYear < 1980 || publishYear > 2050) {
             System.out.println("Неверно введенная дата публикации: " + publishYear);
             return;
         }
@@ -36,22 +36,20 @@ public class Book {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (!(o instanceof Book)) return false;
         Book book = (Book) o;
         return publishYear == book.publishYear && Objects.equals(title, book.title) && Objects.equals(author, book.author);
     }
 
     @Override
-    public String toString() {
-        return "Book{" +
-                "title='" + title + '\'' +
-                ", publishYear=" + publishYear +
-                ", author=" + author +
-                '}';
+    public int hashCode() {
+        return Objects.hash(title, publishYear, author);
     }
 
     @Override
-    public int hashCode() {
-        return Objects.hash(title, publishYear, author);
+    public String toString() {
+        return  "Название книги: " + title +
+                ", год публикации: " + publishYear +
+                ", автор: " + author + ".";
     }
 }
