@@ -30,7 +30,7 @@ public class Book {
     }
 
     public void setPublishYear(int publishYear) {
-        if (publishYear < 1950 || publishYear > 2050) {
+        if (publishYear < 1980 || publishYear > 2030) {
             System.out.println("Неверно введенная дата публикации: " + publishYear);
             return;
         }

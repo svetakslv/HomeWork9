@@ -9,7 +9,7 @@ public class Main {
 
         Author author1 = new Author("Paulo", "Coelho");
         Book theAlchemist = new Book("Алхимик", 1988, author1);
-        theAlchemist.setPublishYear(1938);
+        theAlchemist.setPublishYear(1968);
         System.out.println(theAlchemist);
     }
 }
