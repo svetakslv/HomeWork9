@@ -7,16 +7,8 @@ public class Author {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getSurname() {
+    public String getSurName() {
         return surName = surName;
-    }
-
-    public void setSurName(String surName) {
-        this.surName = surName;
     }
 
     public String toString() {
